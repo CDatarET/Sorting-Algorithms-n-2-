@@ -8,7 +8,7 @@
     bubble sort on roll no ascending
     bubble sort on name descending
     selection sort on marks descending
-    insertion sort on name descending order
+    insertion sort on division descending order
 */
 struct student{
     char name[30];
@@ -114,7 +114,7 @@ int main(){
     int loop = 1;
 
     while(loop){
-        printf("\nEnter operation\n1 for bubble sort by roll number\n2 for bubble sort on name descending\n3 for selection sort on marks descending\n4 for insertion sort on name descending order\n");
+        printf("\nEnter operation\n1 for bubble sort by roll number\n2 for bubble sort on name descending\n3 for selection sort on marks descending\n4 for insertion sort on division descending order\n");
         int choice;
         scanf("%d", &choice);
         printf("\n");
