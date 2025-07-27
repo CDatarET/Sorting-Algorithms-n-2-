@@ -40,10 +40,15 @@ class Main {
     
     public static int[] insertionSort(int[] arr){
         int[] ret = arr.clone();
-        for(int i = 0; i < ret.length; i++){
-            for(int j = i; j < ret.length; j++){
-                
+        for(int i = 1; i < ret.length; i++){
+            int key = ret[i];
+            int j = i  - 1;
+            
+            while(j >= 0 && ret[j] > key){
+                ret[j + 1] = ret[j];
+                j--;
             }
+            ret[j + 1] = key;
         }
         return(ret);
     }
